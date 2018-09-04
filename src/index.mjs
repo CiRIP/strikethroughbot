@@ -40,7 +40,7 @@ Bot.on('inline_query', async ctx => {
 		},
 		description: query
     }];
-    return ctx.answerInlineQuery(result);
+    return ctx.answerInlineQuery(result, extras);
 });
 
 Bot.startPolling();
