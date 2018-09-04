@@ -1,0 +1,15 @@
+{
+  "name": "strikethroughbot",
+  "version": "1.0.0",
+  "description": "Telegram bot for strikethrough text",
+  "main": "src/index.mjs",
+  "scripts": {
+    "start": "node --experimental-modules src/index.mjs"
+  },
+  "repository": "https://github.com/CiRIP/strikethroughbot",
+  "author": "Ciprian Ionescu",
+  "license": "MIT",
+  "dependencies": {
+    "telegraf": "^3.23.0"
+  }
+}
