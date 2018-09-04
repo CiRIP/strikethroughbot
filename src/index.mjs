@@ -22,7 +22,7 @@ Bot.on('inline_query', async ctx => {
     if (ctx.update.inline_query.query === "") {
         return;
     }
-    let query = ctx.update.inline_query.query.replace(/(~{1,2})(.+)\1/g, st);
+    let query = ctx.update.inline_query.query.replace(/(~{1,2})([^~]+)\1/g, st);
     if (query === ctx.update.inline_query.query) {
         query = st(query);
     }
